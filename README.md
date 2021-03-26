@@ -1,11 +1,10 @@
-# epidat: Research Plattform for Jewish            Epigraphy
-## How to link DHJewish projects
+# Bücher auf Grabsteinen
+## Buchkunde und Epigraphik am Beispiel von epidat
 
-presented at : [Jewish/Israel DH meetup](https://www.facebook.com/events/1066238700521847/) 
-
+presented at : Online professionell präsentieren
 Zoom 
 
-2021-03-18
+2021-03-30
 
-online: [https://digicademy.github.io/2021_meetup/](https://digicademy.github.io/2021_meetup/)
+online: [https://kollatzthomas.github.io/buchaufstein/](https://kollatzthomas.github.io/buchaufstein/)
 
