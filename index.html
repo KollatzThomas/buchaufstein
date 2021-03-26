@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OPP</title>
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+        <!-- styles for included libraries -->
+        <!-- chartist -->
+        <!-- <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" /> -->
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+        <!-- hint styles -->
+        <link href="resources/css/hint.css" rel="stylesheet" />
+        <!-- js needed in head -->
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js"></script>
+    </head>
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h5><strong>2021-03-30</strong> ZOOM-Universe </h5>
+                <h5>
+                    <strong>
+                        Online professionell präsentieren
+                    </strong>
+                </h5>
+                <h2 class="red down-100">Bücher auf Grabsteinen</h2>
+                <h3 class=" down-25">Buchkunde und Epigraphik am Beispiel von epidat</h3>
+                <h5 class="down-25"> online <a href="https://kollatzthomas.github.io/buchaufstein"
+                    title="View the presentation online"
+                    >https://kollatzthomas.github.io/buchaufstein</a> </h5>
+                <h5 class="down-75"> <strong> <a href="https://orcid.org/0000-0003-1904-1841"
+                    target="_blank">Thomas Kollatz</a>
+                        | <a href="http://www.adwmainz.de/en/home.html"
+                    target="_blank">Akademie der Wissenschaften und Literatur | </a> |
+                    </strong> <a
+                    href="http://www.adwmainz.de/en/digitalitaet/digitale-akademie.html"
+                    target="_blank">Digital
+                        Academy</a> <br /> <img
+                    src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                    class="twitter-icon" /> <a href="https://twitter.com/kol_t"
+                    title="Thomas Kollatz on Twitter" target="_blank">@kol_t</a> <a
+                    href="https://twitter.com/kol_t" title="epidat on Twitter" target="_blank"
+                    >@_epidat</a>
+                    <!--  <img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                            class="twitter-icon" />
+                        <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter"
+                            >@kol_t</a> -->
+                    <!--<a href="https://twitter.com/digicademy" title="Digitale Akademie"
+                            >@digicademy</a>-->
+                    <!--  <img src="resources/img/Octicons-mark-github.svg" alt="Twitter"
+                            class="gh-icon" />
+                        <a href="https://github.com/digicademy" title="digicademy on GitHub"
+                            >digicademy</a>-->
+ | <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> </h5>
+            </div>
+            <div class="step">
+                <dl>
+                    <dt class="red">01</dt>
+                    <dd>
+                        <a href="#top1">Was ist epidat</a>
+                    </dd>
+                    <dt class="red">02</dt>
+                    <dd>
+                        <a href="#top2">Hebräische Buchkunde digital</a>
+                    </dd>
+                    <dt class="red">03</dt>
+                    <dd>
+                        <a href="#top3">Bücher auf Grabsteinen</a>
+                    <dt class="red">04</dt>
+                    <dd>
+                        <a href="#literature">Literatur</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="step" id="top1">
+                <h2 class="red">01</h2>
+                <h3>Was ist Epidat</h3>
+            </div>
+            <div class="step">
+                <h3 class="red">Epidat ist eine Datenbank</h3>
+                <p class="small">
+                        Als Datenbank zur jüdischen Grabsteinepigraphik dient 
+                        <q>epidat</q>
+                        der Inventarisation, Dokumentation, Edition und Präsentation epigraphischer Bestände. Zur Zeit werden Grabmale jüdischer Friedhöfe aus neun Jahrhunderten und vier Ländern über 
+                        <a href="?info=time&amp;lang=de&amp;release=beta"
+                    >chronologische</a>,
+                        
+                        <a href="?info=space&amp;lang=de&amp;release=beta"
+                    >räumliche</a>
+                        und 
+                        <a href="?info=index&amp;lang=de&amp;release=beta"
+                    >thematische</a>
+                        Zugänge bereitgestellt.
+                    </p>
+                <h3 class="red">Epidat ist eine Forschungsplattform</h3>
+                <p class="small">
+                        Als Forschungsplattform zur jüdischen Grabsteinepigraphik bietet epidat offene Schnittstellen zu den Forschungsdaten gemäß der 
+                        <a
+                    href="?lang=de&amp;release=beta&amp;id=&amp;info=lab#fair">FAIR Prinzipien</a>
+                        und ist eingebunden in interdisziplinäre 
+                        <a
+                    href="?info=lab&amp;lang=de&amp;release=beta#projects"
+                    >Forschungsprojekte und Kooperationen</a>
+                        im Kontext der digitalen Epigraphik und der jüdischen Studien. 
+                    </p>
+                <h3 class="red">Epidat ist ein epigraphisches Langzeitprojekt</h3>
+                <p class="small">
+                    Epidat wird seit dem Jahr 2002 <!--von 
+                    <a href="http://orcid.org/0000-0003-1904-1841">Thomas Kollatz</a>-->
+                    programmiert und seitdem kontinuierlich projektbegleitend weiterentwickelt. Seit 2006 ist die Datenbank und Forschungsplattform online. Seit März 2019 wird epidat im Rahmen einer wissenschaftlichen Kooperation zwischen dem 
+                    <a href="http://www.steinheim-institut.de" target="_blank"
+                    >Salomon-Ludwig-Steinheim-Institut</a>
+                    , Essen und der 
+                    <a href="http://www.adwmainz.de" target="_blank"
+                    >Akademie der Wissenschaften und Literatur</a>
+                    | Mainz gemeinsam weiterentwickelt.</p>
+                <!--<table class="x-small line-height-one">
+                        <tr>
+                            <th>Jahr</th>
+                            <th>Entwicklung</th>
+                        </tr>
+                        <tr>
+                            <td>2002</td>
+                            <td>
+                                Epidat wird seit dem Jahr 2002 von 
+                                <a href="http://orcid.org/0000-0003-1904-1841">Thomas Kollatz</a>
+                                programmiert und seitdem kontinuierlich projektbegleitend weiterentwickelt. Seit März 2019 wird epidat im Rahmen einer wissenschaftlichen Kooperation zwischen dem 
+                                <a href="http://www.steinheim-institut.de" target="_blank">Salomon-Ludwig-Steinheim-Institut</a>
+                                , Essen und der 
+                                <a href="http://www.adwmainz.de" target="_blank">Akademie der Wissenschaften und Literatur</a>
+                                | Mainz gemeinsam weiterentwickelt.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2006</td>
+                            <td>Seit 2006 ist die Datenbank und Forschungsplattform online.</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>
+                                Seit März 2019 wird epidat im Rahmen einer wissenschaftlichen Kooperation zwischen dem 
+                                <a href="http://www.steinheim-institut.de" target="_blank">Salomon-Ludwig-Steinheim-Institut</a>
+                                , Essen und der 
+                                <a href="http://www.adwmainz.de" target="_blank">Akademie der Wissenschaften und Literatur</a>
+                                | Mainz gemeinsam weiterentwickelt.
+                            </td>
+                        </tr>
+                    </table>-->
+                <p class="right x-small">
+                    <a
+                        href="http://www.steinheim-institut.de/cgi-bin/epidat?info=whatisepidat&amp;lang=de&amp;release=beta"
+                        target="_blank">Was ist epidat</a>
+                </p>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <h2 class="red">Umfang</h2>
+                        <table>
+                            <tr>
+                                <td>Friedhöfe</td>
+                                <td class="right">227</td>
+                            </tr>
+                            <tr>
+                                <td>Grabmale</td>
+                                <td class="right">39,851 </td>
+                            </tr>
+                            <tr>
+                                <td>Bilddigitalisate</td>
+                                <td class="right">78,737 </td>
+                            </tr>
+                            <tr>
+                                <td>Personen</td>
+                                <td class="right">45,557</td>
+                            </tr>
+                            <tr>
+                                <td>Datierungen</td>
+                                <td class="right">26,557</td>
+                            </tr>
+                            <tr>
+                                <td>Zeitspanne</td>
+                                <td class="right">1040-1951</td>
+                            </tr>
+                            <tr>
+                                <td>Länder</td>
+                                <td class="right">6 <!--<br/>de nl cz lv pl es--></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="six columns box" style="height:600px;">
+                        <figure class="mfp-lightbox even-right down-50">
+                            <a href="resources/img/epi_beta_small.png">
+                                <img class="down-100" src="resources/img/epi_beta_small.png"
+                                    alt="epibeta startpage" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <p></p>
+                    </div>
+                    <div class="six columns">
+                        <p class="x-small centered up-100"><a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?lang=de&amp;release=beta"
+                            target="_blank">start page of beta version</a> (2021-03)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step" id="top3">
+                <h2 class="red">03</h2>
+                <h3>Bücher auf Grabsteinen</h3>
+            </div>
+            <div class="step">
+                <h2 class="red">Bücher – erwähnt auf Grabsteinen</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox even-left">
+                            <a href="resources/img/1721_FE_0110140204.jpg">
+                                <img src="resources/img/1721_FE_0110140204.jpg" alt="tobedone"
+                                    style="width:35rem" />
+                            </a>
+                        </figure>
+                        <p class="x-small up-25">Hamburg <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-1721&amp;release=beta&amp;lang=en"
+                            target="_blank">hha-1721</a>, <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-1721-1&amp;release=beta&amp;lang=en"
+                            target="_blank">J. Katzenellenbogen</a> <br />foto by B. Sommer</p>
+                    </div>
+                    <div class="six columns">
+                        <blockquote class="down-25 medium">
+                        Insbesondere im 18. und 19. Jahrhundert kommt es vor, dass Grabinschriften Bücher aufführen, die der Verstorbene verfaßt hat. Zuweilen verweisen auch Nachkommen auf Bücher eines Vorfahren. In der folgenden Liste werden rund 50 Bücher aufgeführt mit Titel, ID des Buches in der <a
+                            href="https://www.nli.org.il/en/research-and-teach/catalogs#hebrew"
+                            >Bibliography of the Hebrew Book</a> ID, ID des Grabmales, Name (und Link zum Personeintrag) des Verstorbenen (gegebenfalls Rolle und weitere Hinweis), sowie Ort und Datierung des Grabmals.
+                    </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <!--                <h2 class="red">linking Jewish DH projects</h2>
+-->
+                <div class="row">
+                    <div class="six columns">
+                        <h3 class="red">Datenstruktur</h3>
+                        <p class="x-small"
+                            >bookTitle <br />____hasReferenceToBibliographyOfHebrewBooks<br />________isMentionedOnEpidatObjectId <br />_________refersToEpidatPersonId     </p>
+                    </div>
+                    <div class="six columns">
+                        <h3 class="red">footprints-Projekt</h3>
+                        <blockquote class="x-small">A <a href="https://footprints.ctl.columbia.edu"
+                            target="_blank"
+                            >footprint</a> is a record of the material presence of a literary work at a particular time and place, such as: an extant copy of an imprint a copy owned in the past whose whereabouts are unknown</blockquote>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twalve columns">
+                        <table class="x-small  line-height-one-five">
+                            <tr>
+                                <th>bookTitle</th>
+                                <th>biblHebBookID</th>
+                                <th>mentionedOn</th>
+                                <th>headstoneFor</th>
+                                <th>place</th>
+                                <th>date</th>
+                            </tr>
+                            <tr>
+                                <td class="right">‎‏אספקלריא המאירה‏‎</td>
+                                <td>
+                                    <a
+                                        href="http://uli.nli.org.il:80/F/?func=direct&amp;doc_number=000137549&amp;local_base=MBI01"
+                                        target=" blank">000137549</a>
+                                </td>
+                                <td>
+                                    <a href="?id=wrm-1199&amp;lang=de&amp;release=beta">wrm-1199</a>
+                                </td>
+                                <td><a href="?id=wrm-1199-1&amp;lang=de&amp;release=beta"
+                                    >Dov Beer Horowitz ben Jehuda Halevi </a><br />dateofdeath: 1755-07-24<br />role: descendant of author</td>
+                                <td>Worms</td>
+                                <td>1755</td>
+                            </tr>
+                            <tr>
+                                <td class="right">‎‏לוית חן‏‎</td>
+                                <td>
+                                    <a
+                                        href="http://uli.nli.org.il:80/F/?func=direct&amp;doc_number=000301960&amp;local_base=MBI01"
+                                        target=" blank">000301960</a>
+                                </td>
+                                <td>
+                                    <a href="?id=hha-1674&amp;lang=de&amp;release=beta">hha-1674</a>
+                                </td>
+                                <td><a href="?id=hha-1674-1&amp;lang=de&amp;release=beta"
+                                    >Efraim ben Schmuel Sanwel Hekscher </a><br />dateofdeath: 1759-04-23<br />role: author</td>
+                                <td>Hamburg</td>
+                                <td>1759</td>
+                            </tr>
+                            <tr>
+                                <td class="right">‎‏‏‎ </td>
+                                <td>
+                                    <a
+                                        href="http://uli.nli.org.il:80/F/?func=direct&amp;doc_number=&amp;local_base=MBI01"
+                                        target=" blank"></a>
+                                </td>
+                                <td>
+                                    <a href="?id=wrm-735&amp;lang=de&amp;release=beta">wrm-735</a>
+                                </td>
+                                <td><a href="?id=wrm-735-1&amp;lang=de&amp;release=beta"
+                                    >Menachem Manli ben Elieser Unna </a><br />dateofdeath: 1722-01-15<br />role: author<br />note: ‎‏מחבר ספרים אשר עדיין לא יצא‏‎</td>
+                                <td>Worms</td>
+                                <td>1722</td>
+                            </tr>
+                        </table>
+                        <p class="x-small centered up-25">Vollständiger Index <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=books&amp;lang=de&amp;release=beta#idx" target="_blank"
+                            >books mentioned on stone</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 id="summary" class="red">
+                    tabellarische Zusammenfassung
+                </h2>
+                <div class="row">
+                    <div class="six columns">
+                        <table class="x-small">
+                            <thead>
+                                <tr><th>Kategorie</th><th>Häufigkeit</th><th></th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Bücher</td>      <td colspan="2">41</td></tr>
+                                <tr><td>Personen</td>    <td colspan="2">27</td></tr>
+                                <tr><td>Grabmalen</td> <td colspan="2">27</td></tr>
+                                <tr><td>Rollen/Relationen</td>
+                                    <td>3</td>
+                                    <td><table class="x-small">
+                                        <tr><td>37</td><td> Autor</td></tr>
+                                        <tr><td>5</td><td> Nachkomme </td></tr>
+                                        <tr><td>1</td><td> Sohn</td></tr>
+                                    </table></td></tr>
+                            </tbody></table>
+                    </div>
+                    <div class="six columns">
+                        <table class="x-small">
+                            <thead>
+                                <tr><th>Kategorie</th><th>Häufigkeit</th><th></th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Orte</td>     <td>7</td>
+                                    <td><table class="x-small">
+                                        <tr><td>25</td><td>Hamburg</td></tr>
+                                        <tr><td>4</td><td>Worms</td></tr>
+                                        <tr><td>3</td><td>Ansbach</td></tr>
+                                        <tr><td>4</td><td>Krakow</td></tr>
+                                        <tr><td>5</td><td>Frankfurt am Main</td></tr>
+                                        <tr><td>1</td><td>Chemnitz</td></tr>
+                                        <tr><td>1</td><td>Bonn</td></tr>
+                                    </table></td></tr>
+                                    </tbody></table>
+                    </div></div>
+                    </div>
+            <div class="step"><h2 class="red">Raumzeitliche Visualisierung</h2>
+                <div class="row"><div class="twalve columns">
+                <figure class="mfp-lightbox even-left">
+                    <a href="resources/img/geoBrowser_visualisierung.png"><img src="resources/img/geoBrowser_visualisierung.png" alt="geobrowser"></a>
+                </figure>
+                <p class="centered x-small"><a href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=books&amp;lang=de&amp;release=beta#geovis">Visualisierung</a> im DARIAH-DE Geobrowser</p>
+            </div>
+</div></div>            <div class="step">
+                <h2 class="red">Fazit</h2>
+                <div class="row"> <div class="twalve columns">
+                    
+                    <ul class="line-height-one-five even-left">
+                        <li>Die Erwähnung von Büchern auf Grabmalen ist insgesamt ein marginales Phänomen der jüdischen Sepulchralkultur;</li>
+                        <li>Der zeitliche Schwerpunkt liegt im 18<sup>ten</sup> und beginnenden 19<sup>ten</sup> Jahrhundert;</li>
+                        <li>Insbesondere in Hamburg (unter dänischer Herrschaft, ein Ort zahlreicher Druckhäuser), aber auch den Zentren traditioneller Gelehrsamkeit Worms und Frankfurt wird der Verstorbenen auch mittels ihrer Bücher – auch der ungeschriebenen – erinnert;</li>
+                        <li>Bemerkenswert schliesslich, dass auch die <em>Nachkommenschaft</em> von Autoren gelehrter Traktate und Büchern Erwähnung findet.</li>
+                        <li>Bücher erwähnt auf Grabsteinen sind <q>footprints</q>, ein Zeugnis der materiellen Anwesenheit eines literarischen Werkes in einer bestimmten Zeit, an einem bestimmten Ort.</li>
+                    </ul>
+                </div><!-- <div class="three columns"><h2 class="red">Visualisierung</h2>
+                    
+                    
+                </div> --> </div>
+            </div>
+            
+            <div class="step"> <div class="row"> <div class="six columns"> <div class="centered">
+                <h1 class="red">F I N I S</h1> <h2>סוף דבר הכל נשמע</h2> </div> <div
+                class="centered down-100"> <h3> <a href="#literature">Software und Literatur</a>
+                </h3> <p class="x-small"></p> </div> </div> <div class="six columns"> <figure
+                class="mfp-lightbox centered"> <a href="resources/img/rufus_pollock.jpg"> <img
+                src="resources/img/rufus_pollock.jpg" alt="tobedone" /> </a> </figure></div>
+                </div>
+                                .
+                                
+                     
+                        
+                
+                
+            </div>
+            <div class="step">
+                <h4>Software (Präsentation)</h4>
+                <ul class="small line-height-one-five even-left">
+                    <li> <a href="https://github.com/impress/impress.js" target="_blank"
+                        >Impress.js</a>
+                    (presentation) </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li> <a href="https://github.com/dimsemenov/Magnific-Popup" target="_blank"
+                        >Magnific Popup</a>
+                    (Lightbox) </li>
+                    <li> <a href="http://unitegallery.net/" target="_blank"
+                        >Unite Gallery</a> (photo gallery) </li>
+                </ul>
+            </div>
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script src="resources/js/unite.gallery.js"></script>
+        <!-- chartist -->
+        <!--<script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+        <script src="resources/js/chartist.charts.js"></script>-->
+        <!-- codemirror -->
+        <!--<script src="vendor/codemirror/lib/codemirror.js"></script>
+        <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+        <script src="vendor/codemirror/mode/sparql/sparql.js"></script>
+        <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("sparql"), {
+            mode: "application/sparql-query",
+            matchBrackets: true,
+            lineNumbers: true,
+            viewportMargin: Infinity
+        });
+    </script>-->
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                hashnav: true
+            });</script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+            var obj = impress();
+            obj.init();
+            initSlideNo(obj);</script>
+        <!--<script>
+            var videoStep = document.getElementById("video-step");
+var video = document.getElementById("video");
+videoStep.addEventListener("impress:stepenter", function() {
+    video.play();
+}, false);
+videoStep.addEventListener("impress:stepleave", function() {
+    video.pause();
+}, false);
+        </script>-->
+        <script>
+            var videos = document.getElementsByTagName("video");
+            Array.prototype.forEach.call(videos, function (video) {
+                var videoStep = video.closest(".step");
+                videoStep.addEventListener("impress:stepenter", function () {
+                    video.play();
+                },
+                false);
+                videoStep.addEventListener("impress:stepleave", function () {
+                    video.pause();
+                },
+                false);
+            });</script>
+        <!-- Links to TEI-Documentation -->
+        <!--<script src="resources/js/tei-documentation-links.js">-->
+        <!--</script>-->
+    </body>
+</html>
